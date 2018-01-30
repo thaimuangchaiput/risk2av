@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\frontend",
+    "\\frontend\\controllers",
+    "\\frontend\\themes",
+    "\\frontend\\themes\\adminlte",
+    "\\frontend\\themes\\adminlte\\layouts",
+    "\\frontend\\themes\\adminlte\\site",
+    "\\frontend\\views",
+    "\\frontend\\views\\site"
+  ],
+  "SelectedNode": "\\frontend\\themes\\adminlte\\site\\index.php",
+  "PreviewInSolutionExplorer": false
+}

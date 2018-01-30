@@ -1,0 +1,281 @@
+
+
+risk2_group->codegroup = risk2_datarisk->fromevent  //
+risk2_departreport->ID = risk2_datarisk->departreport //หน่วยงานที่รายงาน 
+risk2_departreport->ID = risk2_datarisk->departrespon  //หน่วยงานที่รับผิดชอบ 
+risk2_risk_level->id = risk2_datarisk->commen // ระดับความรุนแรงทางคลินิก
+risk2_risk_level->id = risk2_datarisk->typereport //ระดับความรุนแรงทั่วไป
+risk2_risk->id = risk2_datarisk->dataevent          //รูปแบบของเหตุการณ์ที่เกิดขึ้น 
+
+
+
++++++++++++++++++++++++++++++++++
+sql
+departreport
+
+update risk2_datarisk set departreport='84' where departreport='ศูนย์คุณภาพ'
+update risk2_datarisk set departreport='95' where departreport='ผู้ป่วยนอก'
+update risk2_datarisk set departreport='96' where departreport='ผู้ป่วยใน'
+update risk2_datarisk set departreport='5' where departreport='เวชระเบียน'
+update risk2_datarisk set departreport='75' where departreport='ทันตกรรม'
+update risk2_datarisk set departreport='83' where departreport='ห้องคลอด'
+update risk2_datarisk set departreport='94' where departreport='ห้องปฏิบัติการชันสูตรโรค'
+update risk2_datarisk set departreport='93' where departreport='บริหารความเสี่ยง'
+update risk2_datarisk set departreport='98' where departreport='admin'
+update risk2_datarisk set departreport='99' where departreport='บริหาร'
+update risk2_datarisk set departreport='113' where departreport='โภชนาการ'
+update risk2_datarisk set departreport='106' where departreport='เอ็กซเรย์'
+update risk2_datarisk set departreport='128' where departreport='เภสัชกรรม'
+update risk2_datarisk set departreport='108' where departreport='งานแผนและยุทธศาสตร์'
+update risk2_datarisk set departreport='109' where departreport='PCU'
+update risk2_datarisk set departreport='110' where departreport='องค์กรแพทย์'
+update risk2_datarisk set departreport='111' where departreport='กายภาพบำบัด'
+update risk2_datarisk set departreport='112' where departreport='แพทย์แผนไทย'
+update risk2_datarisk set departreport='114' where departreport='หน่วยจ่ายกลางและซักฟอก'
+update risk2_datarisk set departreport='115' where departreport='พัสดุ'
+update risk2_datarisk set departreport='116' where departreport='ศูนย์ยานพาหนะ'
+update risk2_datarisk set departreport='124' where departreport='กลุ่มการพยาบาล'
+update risk2_datarisk set departreport='127' where departreport='อุบัติเหตุ-ฉุกเฉิน'
+update risk2_datarisk set departreport='129' where departreport='จุดคัดกรอง'
+update risk2_datarisk set departreport='131' where departreport=' งานป้องกันและควบคุมการติดเชื้อในโรงพยาบาล'
+update risk2_datarisk set departreport='98' where departreport='หน่วยคอมพิวเตอร์'
+
+departrespon
+update risk2_datarisk set departrespon='84' where departrespon='ศูนย์คุณภาพ'
+update risk2_datarisk set departrespon='95' where departrespon='ผู้ป่วยนอก'
+update risk2_datarisk set departrespon='96' where departrespon='ผู้ป่วยใน'
+update risk2_datarisk set departrespon='5' where departrespon='เวชระเบียน'
+update risk2_datarisk set departrespon='75' where departrespon='ทันตกรรม'
+update risk2_datarisk set departrespon='83' where departrespon='ห้องคลอด'
+update risk2_datarisk set departrespon='94' where departrespon='ห้องปฏิบัติการชันสูตรโรค'
+update risk2_datarisk set departrespon='93' where departrespon='บริหารความเสี่ยง'
+update risk2_datarisk set departrespon='98' where departrespon='admin'
+update risk2_datarisk set departrespon='99' where departrespon='บริหาร'
+update risk2_datarisk set departrespon='113' where departrespon='โภชนาการ'
+update risk2_datarisk set departrespon='106' where departrespon='เอ็กซเรย์'
+update risk2_datarisk set departrespon='128' where departrespon='เภสัชกรรม'
+update risk2_datarisk set departrespon='108' where departrespon='งานแผนและยุทธศาสตร์'
+update risk2_datarisk set departrespon='109' where departrespon='PCU'
+update risk2_datarisk set departrespon='110' where departrespon='องค์กรแพทย์'
+update risk2_datarisk set departrespon='111' where departrespon='กายภาพบำบัด'
+update risk2_datarisk set departrespon='112' where departrespon='แพทย์แผนไทย'
+update risk2_datarisk set departrespon='114' where departrespon='หน่วยจ่ายกลางและซักฟอก'
+update risk2_datarisk set departrespon='115' where departrespon='พัสดุ'
+update risk2_datarisk set departrespon='116' where departrespon='ศูนย์ยานพาหนะ'
+update risk2_datarisk set departrespon='124' where departrespon='กลุ่มการพยาบาล'
+update risk2_datarisk set departrespon='127' where departrespon='อุบัติเหตุ-ฉุกเฉิน'
+update risk2_datarisk set departrespon='129' where departrespon='จุดคัดกรอง'
+update risk2_datarisk set departrespon='131' where departrespon=' งานป้องกันและควบคุมการติดเชื้อในโรงพยาบาล'
+update risk2_datarisk set departrespon='98' where departrespon='หน่วยคอมพิวเตอร์'
+
+
+
+commen
+update risk2_datarisk set commen='22' where commen='A ยังไม่เกิด (เกือบพลาด)'
+update risk2_datarisk set commen='23' where commen='B เกิดแต่ยังไม่ถึงผู้ป่วย'
+update risk2_datarisk set commen='24' where commen='C รุนแรงน้อย ผู้ป่วยยังไม่ได้รับอันตราย'
+update risk2_datarisk set commen='25' where commen='D รุนแรงปานกลาง ต้อง observe อาการต่อ'
+update risk2_datarisk set commen='26' where commen='E รุนแรงมาก ต้องรักษาเพิ่ม'
+update risk2_datarisk set commen='27' where commen='F รุนแรงมาก ต้องนอน รพ.นานขึ้น'
+update risk2_datarisk set commen='28' where commen='G รุนแรงมาก เกิดความพิการ อันตรายถาวร'
+update risk2_datarisk set commen='29' where commen='H รุนแรงมาก เป็นอันตรายต้องช่วย CPR'
+update risk2_datarisk set commen='31' where commen='I รุนแรงมาก ผู้ป่วยเสียชีวิต'
+
+
+typereport
+update risk2_datarisk set typereport='36' where typereport='1 ต่ำ'
+update risk2_datarisk set typereport='36' where typereport='1 ต่ำมาก ไม่มีความคลาดเคลื่อน'
+update risk2_datarisk set typereport='36' where typereport='1 ต่ำ (สิทธิผู้ป่วยและข้อร้องเรียน)'
+update risk2_datarisk set typereport='38' where typereport='2 ปานกลาง '
+update risk2_datarisk set typereport='38' where typereport='2 ต่ำ เกิดความคลาดเคลื่อน แต่ไม่เป็นอันตราย'
+update risk2_datarisk set typereport='38' where typereport='2 สูง'
+update risk2_datarisk set typereport='55' where typereport='3 ปานกลาง มีความคลาดเคลื่อนและเป็นอันตราย'
+update risk2_datarisk set typereport='56' where typereport='4 มีความคลาดเคลื่อน และเป็นอันตรายมาก'
+
+
+risk2_risk
+update risk2_datarisk set dataevent='112' where dataevent=' 6.อุปกรณ์คอมพิวเตอร์ไม่เพียงพอ / ไม่พร้อมใช้งาน / สูญหาย'
+update risk2_datarisk set dataevent='28' where dataevent='1.Indication ไม่ผ่าน'
+update risk2_datarisk set dataevent='34' where dataevent='1.ติดต่อเจ้าหน้าที่เวรไม่ได้ / มาช้า'
+update risk2_datarisk set dataevent='20' where dataevent='1.ผิดคน'
+update risk2_datarisk set dataevent='54' where dataevent='1.ผิดพลาดทางการเงิน'
+update risk2_datarisk set dataevent='1' where dataevent='1.ผู้ป่วย/ญาติไม่พอใจ'
+update risk2_datarisk set dataevent='5' where dataevent='1.หา OPD card ไม่เจอ/สูญหาย'
+update risk2_datarisk set dataevent='39' where dataevent='1.ไฟไหม้'
+update risk2_datarisk set dataevent='66' where dataevent='10.การระบุตัวผู้ป่วยผิดพลาด'
+update risk2_datarisk set dataevent='18' where dataevent='10.ข้อบกพร่องในการส่งต่อ'
+update risk2_datarisk set dataevent='88' where dataevent='10.ทำร้ายร่างกาย'
+update risk2_datarisk set dataevent='96' where dataevent='10.อื่นๆ (ENV)'
+update risk2_datarisk set dataevent='83' where dataevent='10.อุปกรณ์ใน set ไม่ครบ'
+update risk2_datarisk set dataevent='113' where dataevent='10.เครื่องมือ อุปกรณ์ ไม่เพียงพอ / ไม่พร้อมใช้งาน / สูญหาย'
+update risk2_datarisk set dataevent='84' where dataevent='11.ถุงมือขาด/ผิดคู่'
+update risk2_datarisk set dataevent='19' where dataevent='11.มารดาตกเลือดหลังคลอด'
+update risk2_datarisk set dataevent='114' where dataevent='11.ยานพาหนะ ไม่เพียงพอ / ไม่พร้อมใช้งาน / สูญหาย'
+update risk2_datarisk set dataevent='74' where dataevent='11.ลง HN ผิด/ซ้ำ'
+update risk2_datarisk set dataevent='90' where dataevent='12.ถูกข่มขู่ คุกคาม'
+update risk2_datarisk set dataevent='76' where dataevent='12.มารดาคลอดบนเตียงรอคลอด'
+update risk2_datarisk set dataevent='96' where dataevent='12.อื่นๆ (ENV)'
+update risk2_datarisk set dataevent='93' where dataevent='12.อื่นๆ (IC)'
+update risk2_datarisk set dataevent='97' where dataevent='12.อื่นๆ (IM)'
+update risk2_datarisk set dataevent='99' where dataevent='12.ให้ยาผู้ป่วยผิดเวลา'
+update risk2_datarisk set dataevent='67' where dataevent='12.ไม่จ่ายค่ารักษาพยาบาลหลังจากรับบริการ'
+update risk2_datarisk set dataevent='90' where dataevent='13.ถูกข่มขู่ คุกคาม'
+update risk2_datarisk set dataevent='54' where dataevent='13.ผิดพลาดทางการเงิน'
+update risk2_datarisk set dataevent='77' where dataevent='13.มารดา/ทารกตาย'
+update risk2_datarisk set dataevent='71' where dataevent='13.ลงข้อมูลไม่สมบูรณ์'
+update risk2_datarisk set dataevent='100' where dataevent='13.ไม่ได้ให้ยาแก่ผู้ป่วย'
+update risk2_datarisk set dataevent='106' where dataevent='14.ยาหมดอายุ/เสื่อมสภาพ'
+update risk2_datarisk set dataevent='56' where dataevent='14.หนังสือราชการสูญหาย/ล่าช้า'
+update risk2_datarisk set dataevent='43' where dataevent='14.อื่นๆ (สิทธิผู้ป่วยและข้อร้องเรียน)'
+update risk2_datarisk set dataevent='67' where dataevent='14.ไม่จ่ายค่ารักษาพยาบาลหลังจากรับบริการ'
+update risk2_datarisk set dataevent='18' where dataevent='15.ผล lab error'
+update risk2_datarisk set dataevent='54' where dataevent='15.ผิดพลาดทางการเงิน'
+update risk2_datarisk set dataevent='103' where dataevent='15.สั่งใช้ยาที่ผู้ป่วยมีประวัติแพ้ยา'
+update risk2_datarisk set dataevent='43' where dataevent='15.อื่นๆ (สิทธิผู้ป่วยและข้อร้องเรียน)'
+update risk2_datarisk set dataevent='3' where dataevent='16.บัตรนัดไม่ถูกต้อง/ไม่ครบถ้วน'
+update risk2_datarisk set dataevent='74' where dataevent='16.ลง HN ผิด/ซ้ำ'
+update risk2_datarisk set dataevent='104' where dataevent='16.สั่งใช้ยาที่มีปฏิกิริยาต่อกันหรือกับยาเดิมของผู้ป่วย'
+update risk2_datarisk set dataevent='56' where dataevent='16.หนังสือราชการสูญหาย/ล่าช้า'
+update risk2_datarisk set dataevent='91' where dataevent='16.อื่นๆ (การดูแลรักษาผู้ป่วย)'
+update risk2_datarisk set dataevent='4' where dataevent='17.คัดกรองส่งผิดแผนก'
+update risk2_datarisk set dataevent='109' where dataevent='17.สั่งยาที่ไม่ควรให้ในกลุ่มผู้ป่วยบางกลุ่ม เช่น ผู้ป่วยที่มีปัญหาตับ ไต, หญิงมีครรภ์, ให้นมบุตร, เด็กบางช่วงอายุ ฯลฯ'
+update risk2_datarisk set dataevent='43' where dataevent='17.อื่นๆ  (สิทธิผู้ป่วยและข้อร้องเรียน)'
+update risk2_datarisk set dataevent='35' where dataevent='17.ไม่มีผู้ให้รับบริการ (แผนก)'
+update risk2_datarisk set dataevent='105' where dataevent='18.คัดลอก Medication Reconciliation คลาดเคลื่อน'
+update risk2_datarisk set dataevent='69' where dataevent='18.ผล lab / X-ray Error'
+update risk2_datarisk set dataevent='70' where dataevent='19.Lab ไม่รายงานค่าวิกฤต/ล่าช้า'
+update risk2_datarisk set dataevent='110' where dataevent='19.คัดลอกรายการใบ order คลาดเคลื่อน / ไม่ครบ '
+update risk2_datarisk set dataevent='6' where dataevent='2.OPD card ผิดคน'
+update risk2_datarisk set dataevent='29' where dataevent='2.Phlebitis'
+update risk2_datarisk set dataevent='4' where dataevent='2.คัดกรองส่งผิดแผนก'
+update risk2_datarisk set dataevent='55' where dataevent='2.ซ่อมบำรุงล่าช้า'
+update risk2_datarisk set dataevent='21' where dataevent='2.ผิดขนาด'
+update risk2_datarisk set dataevent='21' where dataevent='2.ผิดขนาด/ผิดชนิด/ผิดรูปแบบ/บริหารยาผิด/ไม่ครบรายการ/ผิดจำนวน'
+update risk2_datarisk set dataevent='10' where dataevent='2.มาตรวจซ้ำที่ ER ภายใน 48 ชั่วโมง'
+update risk2_datarisk set dataevent='10' where dataevent='2.มาตรวจซ้ำภายใน 24 ชั่วโมง'
+update risk2_datarisk set dataevent='40' where dataevent='2.สภาพแวดล้อมภายใน/ภายนอก รพ.'
+update risk2_datarisk set dataevent='21' where dataevent='2.ให้ผิดขนาด/ชนิด/วิธี/เวลา'
+update risk2_datarisk set dataevent='35' where dataevent='2.ไม่มีผู้ให้บริการ (แผนก)'
+update risk2_datarisk set dataevent='47' where dataevent='2.ไม่รักษาความลับของผู้ป่วย'
+update risk2_datarisk set dataevent='107' where dataevent='20.พิมพ์รายการยาในคอมพิวเตอร์คลาดเคลื่อน'
+update risk2_datarisk set dataevent='8' where dataevent='1.การ admit ซ้ำโรคเดิมภายใน 28 วัน'
+update risk2_datarisk set dataevent='3' where dataevent='1.บัตรนัดไม่ถูกต้อง/ไม่ครบถ้วน'
+update risk2_datarisk set dataevent='34' where dataevent='10.ติดต่อ จนท.เวรไม่ได้/มาช้า'
+update risk2_datarisk set dataevent='43' where dataevent='17.อื่นๆ (สิทธิผู้ป่วยและข้อร้องเรียน)'
+update risk2_datarisk set dataevent='91' where dataevent='20.อื่นๆ (การดูแลรักษาผู้ป่วย)'
+update risk2_datarisk set dataevent='111' where dataevent='22.อื่นๆ (ความคลาดเคลื่อนทางยา)'
+update risk2_datarisk set dataevent='48' where dataevent='3.ข้อร้องเรียน'
+update risk2_datarisk set dataevent='30' where dataevent='3.ติดเชื้อในโรงพยาบาล'
+update risk2_datarisk set dataevent='3' where dataevent='3.บัตรนัดไม่ถูกต้อง/ไม่ครบถ้วน'
+update risk2_datarisk set dataevent='22' where dataevent='3.ผิดความแรง'
+update risk2_datarisk set dataevent='7' where dataevent='3.ลงสิทธิการรักษาไม่ถูกต้อง'
+update risk2_datarisk set dataevent='11' where dataevent='3.ล่าช้าในการดูแลรักษาผู้ป่วยที่ทรุดลง'
+update risk2_datarisk set dataevent='56' where dataevent='3.หนังสือราชการสูญหาย/ล่าช้า'
+update risk2_datarisk set dataevent='5' where dataevent='3.หา OPD card ไม่เจอ/สูญหาย'
+update risk2_datarisk set dataevent='103' where dataevent='3.แพ้ยา/เลือด/สารน้ำ/วัคซีน'
+update risk2_datarisk set dataevent='41' where dataevent='3.ไฟฟ้าตก/ดับ'
+update risk2_datarisk set dataevent='6' where dataevent='4.OPD card ผิดคน'
+update risk2_datarisk set dataevent='4' where dataevent='4.คัดกรองส่งผิดแผนก'
+update risk2_datarisk set dataevent='12' where dataevent='4.ผู้ป่วยเสียชีวิตในรพ./ขณะส่งต่อ (EMS, Refer)'
+update risk2_datarisk set dataevent='23' where dataevent='4.ยาผิดชนิด'
+update risk2_datarisk set dataevent='42' where dataevent='4.ระบบประปารั่ว/แตก/ไม่ไหล/ขุ่น'
+update risk2_datarisk set dataevent='71' where dataevent='4.ลงข้อมูลไม่สมบูรณ์'
+update risk2_datarisk set dataevent='111' where dataevent='21.อื่นๆ (ความคลาดเคลื่อนทางยา)'
+update risk2_datarisk set dataevent='31' where dataevent='4.แยกขยะ/อุปกรณ์หลังใช้งานไม่ถูกต้อง'
+update risk2_datarisk set dataevent='32' where dataevent='5.ถูกเข็ม/ของมีคมตำ'
+update risk2_datarisk set dataevent='86' where dataevent='5.ทรัพย์สินสูญหาย'
+update risk2_datarisk set dataevent='13' where dataevent='5.มีภาวะแทรกซ้อนจากการทำหัตถการ/การดูแลรักษา'
+update risk2_datarisk set dataevent='24' where dataevent='5.รูปแบบยาผิด'
+update risk2_datarisk set dataevent='74' where dataevent='5.ลง HN ผิด/ซ้ำ'
+update risk2_datarisk set dataevent='7' where dataevent='5.ลงสิทธิการรักษาไม่ถูกต้อง'
+update risk2_datarisk set dataevent='5' where dataevent='5.หา OPD card ไม่เจอ/สูญหาย'
+update risk2_datarisk set dataevent='38' where dataevent='5.อื่นๆ (การพัฒนาทรัพยากรมนุษย์)'
+update risk2_datarisk set dataevent='6' where dataevent='6.OPD card ผิดคน'
+update risk2_datarisk set dataevent='14' where dataevent='6.ดูแล Tube/Cath/Drain ไม่ถูกต้อง'
+update risk2_datarisk set dataevent='87' where dataevent='6.บาดเจ็บจากการทำงาน'
+update risk2_datarisk set dataevent='1' where dataevent='6.ผู้ป่วย/ญาติไม่พอใจ'
+update risk2_datarisk set dataevent='101' where dataevent='6.รายการผิด (ขาด/เกิน, ยาที่ไม่ได้สั่ง)'
+update risk2_datarisk set dataevent='70' where dataevent='7.Lab ไม่รายงานค่าวิกฤต/ล่าช้า'
+update risk2_datarisk set dataevent='15' where dataevent='7.พลัดตกขณะเคลื่อนย้าย'
+update risk2_datarisk set dataevent='13' where dataevent='7.มีภาวะแทรกซ้อนจาก IV/IM'
+update risk2_datarisk set dataevent='102' where dataevent='7.ยาผิดจำนวน (น้อย/เกิน)'
+update risk2_datarisk set dataevent='7' where dataevent='7.ลงสิทธิการรักษาไม่ถูกต้อง'
+update risk2_datarisk set dataevent='97' where dataevent='7.อื่นๆ (IM)'
+update risk2_datarisk set dataevent='43' where dataevent='7.อื่นๆ (สิทธิผู้ป่วยและข้อร้องเรียน)'
+update risk2_datarisk set dataevent='80' where dataevent='7.ไม่ระบุวันเปิด/วันหมดอายุ'
+update risk2_datarisk set dataevent='2' where dataevent='7.ไม่สมัครใจอยู่'
+update risk2_datarisk set dataevent='66' where dataevent='8.การระบุตัวผู้ป่วยผิดพลาด'
+update risk2_datarisk set dataevent='34' where dataevent='8.ติดต่อ จนท.เวรไม่ได้/มาช้า'
+update risk2_datarisk set dataevent='86' where dataevent='8.ทรัพย์สินสูญหาย'
+update risk2_datarisk set dataevent='81' where dataevent='8.ทำปราศจากเชื้อผิดวิธี'
+update risk2_datarisk set dataevent='16' where dataevent='8.ปฏิบัติไม่ถูกต้องตาม order'
+update risk2_datarisk set dataevent='71' where dataevent='8.ลงข้อมูลไม่สมบูรณ์'
+update risk2_datarisk set dataevent='111' where dataevent='8.อื่นๆ (ความคลาดเคลื่อนทางยา)'
+update risk2_datarisk set dataevent='55' where dataevent='9.ซ่อมบำรุงล่าช้า'
+update risk2_datarisk set dataevent='70' where dataevent='11.รายงาน Lab ผิดคน/ช้า/ไม่ตรงกับใน lab'
+update risk2_datarisk set dataevent='87' where dataevent='9.บาดเจ็บจากการทำงาน'
+update risk2_datarisk set dataevent='26' where dataevent='9.วิถีทางให้ยาผิด'
+update risk2_datarisk set dataevent='82' where dataevent='9.อุปกรณ์ติดไปกับผ้า'
+update risk2_datarisk set dataevent='67' where dataevent='9.ไม่จ่ายค่ารักษาพยาบาลหลังจากรับบริการ'
+update risk2_datarisk set dataevent='4' where dataevent='การคัดกรองคนไข้'
+
+
+-----------------
+เพิ่มฟิล 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
